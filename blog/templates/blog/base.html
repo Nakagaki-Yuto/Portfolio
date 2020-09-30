@@ -1,0 +1,28 @@
+{% load static %}
+
+<html>
+    <head>
+        <title>Nakagaki Yuto Portfolio</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+
+        <!-- .gnav -->
+        <nav class="gnav" class="fixed">
+            <ul class="gnav-list">
+                <li class="gnav-item"><a class="gnav-link" href="#works-section">WORKS</a></li>
+                <li class="gnav-item"><a class="gnav-link" href="#feature-section">FEATURE</a></li>
+                <li class="gnav-item"><a class="gnav-link" href="#about-section">ABOUT</a></li>
+                <li class="gnav-item"><a class="gnav-link" href="#skill-section">SKILL</a></li>
+                <li class="gnav-item"><a class="gnav-link" href="#contact-section">CONTACT</a></li>
+            </ul>
+        </nav>
+        <!-- /.gnav -->
+
+        {% block content %}
+        {% endblock %}
+
+    </body>
+</html>

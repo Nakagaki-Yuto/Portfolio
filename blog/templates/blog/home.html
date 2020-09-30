@@ -1,0 +1,26 @@
+{% extends 'blog/base.html' %}
+
+{% block content %}
+
+<!-- .page-header -->
+<div class="page-header">
+    <h1>NAKAGAKI YUTO</h1>
+    <h3>Portfolio</h3>
+</div>
+<!-- /.page-header -->
+
+<!-- .post -->
+<div class="content container">
+    <div class="row">
+        <div class="col-md-8">
+            {% for post in posts %}
+                <div class="post">
+                    <h4><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h4>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<!-- /.post -->
+{% endblock %}
+
