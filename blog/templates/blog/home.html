@@ -15,6 +15,7 @@
         <div class="col-md-8">
             {% for post in posts %}
                 <div class="post">
+                    <p>{{ post.published_date }}</p>
                     <h4><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h4>
                 </div>
             {% endfor %}

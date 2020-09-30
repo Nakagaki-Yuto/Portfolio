@@ -1,7 +1,7 @@
 {% extends 'blog/base.html' %}
 
 {% block content %}
-<div class="content container">
+<div class="container">
     <div class="post">
         {% if post.published_date %}
             <div class="date">
@@ -11,5 +11,23 @@
         <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
+</div>
+
+<div class="container">
+    <a class="btn btn-default" href="{% url 'add_comment_to_post' pk=post.pk %}">コメント</a>
+
+    <hr>
+
+    <p>コメント {{ post.comments.count }}件</p>
+
+    {% for comment in post.comments.all %}
+        {% if comment.approved_comment == True %}
+        <div class="comment">
+            <div class="date">{{ comment.created_date }}</div>
+            <strong>{{ comment.author }}</strong>
+            <p>{{ comment.text|linebreaks }}</p>
+        </div>
+        {% endif %}
+    {% endfor %}
 </div>
 {% endblock %}

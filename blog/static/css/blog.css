@@ -9,10 +9,14 @@
 
 .post {
     margin: 50px;
+}
 
+.comment {
+    margin: 50px;
 }
 
 h1, h2 a, h3, h4 a {
     color: black;
 }
+
 
