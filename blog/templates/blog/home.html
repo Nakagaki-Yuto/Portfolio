@@ -1,4 +1,5 @@
 {% extends 'blog/base.html' %}
+{% load static %}
 
 {% block content %}
 
@@ -11,19 +12,54 @@
   </header>
 <!-- /.page-header -->
 
-<!-- .post -->
-<div class="content container">
-    <div class="row">
-        <div class="col-md-8">
-            {% for post in posts %}
-                <div class="post">
-                    <p>{{ post.published_date }}</p>
-                    <h4><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h4>
-                </div>
-            {% endfor %}
+<!-- .about-section -->
+<section class="about-section section" id="about-section">
+    <h2 class="section-title">ABOUT</h2>
+    <div class="about-item">
+        <img class="about-image" src="{% static 'img/profile-photo2.JPG' %}" alt="プロフィール画像" width="200">
+        <div class="about-body">
+            <p>
+                はじめまして！中垣祐人（ナカガキユウト）と申します。<br>
+                自身の学生生活のポートフォリオになるようなサイトを作りました。<br>自己紹介やちょっとしたブログを載せています。<br><br>
+                このサイトのソースコードはGitHubでご確認頂けます。<br>
+                　　　　　→　
+                <a class="github" href="https://github.com/Nakagaki-Yuto/Portfolio" target="_blank">GitHubアカウントへ</a>
+
+            </p>
         </div>
     </div>
-</div>
-<!-- /.post -->
+</section>
+<!-- /.about-section -->
+
+<!-- .work-section -->
+<section class="work-section section" id="work-section">
+    <h2 class="section-title">WORK</h2>
+</section>
+<!-- /.work-section -->
+
+<!-- .skill-section -->
+<section class="skill-section section" id="skill-section">
+    <h2 class="section-title">SKILL</h2>
+</section>
+<!-- /.skill-section -->
+
+
+<!-- .blog-section -->
+<section class="blog-section section" id="blog-section">
+    <h2 class="section-title">BLOG</h2>
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+                {% for post in posts %}
+                    <div class="post">
+                        <p>{{ post.published_date }}</p>
+                        <h4><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h4>
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /.blog-section -->
 {% endblock %}
 

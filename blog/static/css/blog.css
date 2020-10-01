@@ -1,13 +1,13 @@
 /*全体*/
 
 body {
-    color: darkslategrey;
-    font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic";
-    font-size: 15px;
-    line-height: 1.8;
-    letter-spacing: .8px;
-    word-break: normal;
-    color: #333333;
+  color: darkslategrey;
+  font-family: "游ゴシック Medium", "Yu Gothic Medium", "游ゴシック体", "YuGothic", "メイリオ", "Meiryo", "ＭＳ Ｐゴシック", "MS PGothic";
+  font-size: 15px;
+  line-height: 1.8;
+  letter-spacing: .8px;
+  word-break: normal;
+  color: #333333;
 }
 
 ul,
@@ -21,63 +21,62 @@ a {
 
 /*navbar*/
 .navbar {
-    position: fixed;
-    top: -10;
-    left: 0;
-    z-index: 100;
-    width: 100%;
-    height: 60px;
-    margin-bottom: opx;
-    -webkit-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
-    -moz-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
-    box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
-  }
-  
-  .navbar-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding-left: 0%;
-  }
-  
-  .navbar-item {
-    font-family: "Open sans", sans-serif;
-    font-size: 14px;
-    font-weight: bold;
-    padding: 0 24px;
-    letter-spacing: .05em;
-  }
-  
-  .navbar-link {
-    position: relative;
-    display: inline-block;
-    padding: 20px 0;
-    -webkit-transition: .3s;
-    transition: .3s;
-    color: #333;
-  }
-  
-  .navbar-link:hover {
-    color: #333;
-    text-decoration: none;
-  }
-  
-  .navbar-link:after {
-    position: absolute;
-    bottom: 10;
-    left: 50%;
-    width: 0;
-    height: 3px;
-    content: "";
-    transition: .3s;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    background-color: #333;
-  }
-  
-  .navbar-link:hover:after {
-    width: 100%;
-  }
+  position: fixed;
+  top: -10;
+  left: 0;
+  z-index: 100;
+  width: 100%;
+  height: 60px;
+  -webkit-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
+  -moz-box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
+  box-shadow: 0 3px 3px -3px rgba(0, 0, 0, .2);
+}
+
+.navbar-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-left: 0%;
+}
+
+.navbar-item {
+  font-family: "Open sans", sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 0 24px;
+  letter-spacing: .05em;
+}
+
+.navbar-link {
+  position: relative;
+  display: inline-block;
+  padding: 20px 0;
+  -webkit-transition: .3s;
+  transition: .3s;
+  color: #333;
+}
+
+.navbar-link:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+.navbar-link:after {
+  position: absolute;
+  bottom: 10;
+  left: 50%;
+  width: 0;
+  height: 3px;
+  content: "";
+  transition: .3s;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  background-color: #333;
+}
+
+.navbar-link:hover:after {
+  width: 100%;
+}
 
 
 /*page-header*/
@@ -89,23 +88,46 @@ a {
     user-select: none;
   }
   
-  .logo {
-    position: relative;
-    margin-bottom: 30px;
-    padding: 0 20px;
-    text-align: center;
-  }
-  
-  .logo-title {
-    font-family: "Open sans", sans-serif;
-    font-size: 64px;
-    padding-bottom: 20px;
-    line-height: 1;
-    letter-spacing: .2em;
-  }
-  
-  .logo-subtitle {
-    font-size: 30px;
-    margin-top: 5px;
-    letter-spacing: .2em;
-  }
+.logo {
+  position: relative;
+  margin-bottom: 30px;
+  padding: 0 20px;
+  text-align: center;
+}
+
+.logo-title {
+  font-family: "Open sans", sans-serif;
+  font-size: 64px;
+  padding-bottom: 20px;
+  line-height: 1;
+  letter-spacing: .2em;
+}
+
+.logo-subtitle {
+  font-size: 30px;
+  margin-top: 5px;
+  letter-spacing: .2em;
+}
+
+/*about-section*/
+.about-section {
+  max-width: 1000px;
+}
+
+.about-item {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.about-image {
+  flex: 0 0 220px;
+  margin-right: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 25px 0 #d9d9d9;
+} 
+
+.about-body {
+  flex: 1;
+}
