@@ -113,7 +113,7 @@ a {
 
 /*about-section*/
 /*try-section*/
-.about-section, .try-section{
+.about-section .inner, .try-section .inner{
   max-width: 1000px;
 }
 
@@ -141,3 +141,40 @@ a {
   box-shadow: 0 0 25px 0 #d9d9d9;
 }
 
+/*skill-section*/
+.skill-section .inner {
+  max-width: 1000px;
+}
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: -50px;
+}
+
+.skill-item {
+  display: flex;
+  flex: 0 0 46%;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.skill-image {
+  flex: 0 0 60px;
+  margin-right: 20px;
+}
+
+.skill-body {
+  flex: 1;
+}
+
+.skill-body p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.skill-title {
+  margin-bottom: 3px;
+}
