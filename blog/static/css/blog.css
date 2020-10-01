@@ -112,11 +112,12 @@ a {
 }
 
 /*about-section*/
-.about-section {
+/*try-section*/
+.about-section, .try-section{
   max-width: 1000px;
 }
 
-.about-item {
+.about-item, .try-item {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -130,6 +131,13 @@ a {
   box-shadow: 0 0 25px 0 #d9d9d9;
 } 
 
-.about-body {
+.about-body, .try-body {
   flex: 1;
 }
+
+.try-image {
+  flex: 0 0 220px;
+  margin-right: 40px;
+  box-shadow: 0 0 25px 0 #d9d9d9;
+}
+

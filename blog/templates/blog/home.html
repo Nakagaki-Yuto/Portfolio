@@ -25,29 +25,99 @@
                 はじめまして！中垣祐人（ナカガキユウト）と申します。<br>
                 自身の学生生活のポートフォリオになるようなサイトを作りました。<br>自己紹介やちょっとしたブログを載せています。<br><br>
                 このサイトのソースコードはGitHubでご確認頂けます。<br>
+                ブログ投稿が出来る機能を実装してみました。
+                たいしたコードではないですが(笑)<br>
                 　　　　　→　
                 <a class="github" href="https://github.com/Nakagaki-Yuto/Portfolio" target="_blank">GitHubアカウントへ</a>
-
+                
             </p>
         </div>
     </div>
 </section>
 <!-- /.about-section -->
 
-<!-- .work-section -->
-<section class="work-section section" id="work-section">
+<!-- .try-section -->
+<section class="try-section section" id="try-section">
     <div class="section-title">
-        <h2>WORK</h2>
+        <h2>Try</h2>
         <p>取り組んでいること</p>
     </div>
+    <div class="try-item">
+        <img class="try-image" src="{% static 'img/addrust_img.JPG' %}" alt="長期インターン" width="200">
+        <div class="try-body">
+            <p>
+                大学1年生の9月から、マーケティング系の会社でのインターンシップに取り組んでいます。<br><br>
+                テレマーケティング事業部にて、初めはプレイヤーから、約一年後には20人程のチームをまとめるリーダーも経験しました。<br>
+                現在はHRMにも全力で挑戦中です！！！<br>
+                
+
+            </p>
+        </div>
+    </div>
 </section>
-<!-- /.work-section -->
+<!-- /.try-section -->
 
 <!-- .skill-section -->
 <section class="skill-section section" id="skill-section">
     <div class="section-title">
         <h2>SKILL</h2>
         <p>持っているスキル</p>
+    </div>
+    <div class="skill-body">
+        <div class="skill-list">
+          <div class="skill-item">
+            <div class="skill-image-wrapper">
+              <img class="skill-image" src="{% static 'img/python_logo.jpg' %}" alt="Pythonロゴ">
+            </div>
+            <div class="skill-body">
+              <h3 class="skill-title">Python</h3>
+              <div class="skill-rating rating">
+                <div class="rate rate4"></div>
+              </div>
+              <p>
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-image-wrapper">
+              <img class="skill-image" src="{% static 'img/django_logo.jpg' %}" alt="Djangoロゴ">
+            </div>
+            <div class="skill-body">
+              <h3 class="skill-title">Django</h3>
+              <div class="skill-rating rating">
+                <div class="rate rate3"></div>
+              </div>
+              <p>
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-image-wrapper">
+              <img class="skill-image" src="{% static 'img/javascript_logo.png' %}" alt="JavaScriptロゴ">
+            </div>
+            <div class="skill-body">
+              <h3 class="skill-title">JavaScript</h3>
+              <div class="skill-rating rating">
+                <div class="rate rate4"></div>
+              </div>
+              <p>
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <div class="skill-image-wrapper">
+              <img class="skill-image" src="{% static 'img/golang_logo.png' %}" alt="Golangロゴ">
+            </div>
+            <div class="skill-body">
+              <h3 class="skill-title">Golang</h3>
+              <div class="skill-rating rating">
+                <div class="rate rate4"></div>
+              </div>
+              <p>
+                テキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキストテキスト</p>
+            </div>
+          </div>
+        </div>
     </div>
 </section>
 <!-- /.skill-section -->
@@ -57,7 +127,7 @@
 <section class="blog-section section" id="blog-section">
     <div class="section-title">
         <h2>BLOG</h2>
-        <p>ちょっとしたブログ</p>
+        <p>ちょっとしたブログです</p>
     </div>
     <div class="content container">
         <div class="row">
