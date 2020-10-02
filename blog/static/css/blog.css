@@ -18,6 +18,15 @@ li {
 
 a {
     text-decoration: none;
+    color: black;
+}
+/*sectin*/
+.section-title h2 {
+  
+}
+
+.section-title h2 {
+
 }
 
 /*navbar*/
@@ -113,7 +122,7 @@ a {
 
 /*about-section*/
 /*try-section*/
-.about-section .inner, .try-section .inner{
+.about-section , .try-section {
   max-width: 1000px;
 }
 
@@ -142,7 +151,7 @@ a {
 }
 
 /*skill-section*/
-.skill-section .inner {
+.skill-section {
   max-width: 1000px;
 }
 
@@ -177,4 +186,36 @@ a {
 
 .skill-title {
   margin-bottom: 3px;
+}
+
+/*contact*/
+
+.contact-text {
+  margin-top: 10px;
+  text-align: center;
+}
+
+/* footer */
+/* .footer {
+  background-color: #333;
+} */
+
+.footer .inner {
+  padding: 20px;
+}
+
+.copyright {
+  font-size: 10px;
+  text-align: center;
+}
+
+.page-top {
+  font-size: 12px;
+  font-weight: bold;
+  display: block;
+  padding: 8px;
+  cursor: pointer;
+  text-align: center;
+  color: fff;
+  background-color: #333
 }
