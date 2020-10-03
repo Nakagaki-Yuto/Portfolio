@@ -36,6 +36,8 @@
 </section>
 <!-- /.about-section -->
 
+<hr>
+
 <!-- .try-section -->
 <section class="try-section section" id="try-section">
     <div class="section-title">
@@ -56,6 +58,8 @@
     </div>
 </section>
 <!-- /.try-section -->
+
+<hr>
 
 <!-- .skill-section -->
 <section class="skill-section section" id="skill-section">
@@ -107,6 +111,7 @@
         </div>
     </div>
     <div class="section-title">
+        <br><br><br>
         <p>勉強中のスキル</p>
     </div>
     <div class="section-body skill-list">
@@ -134,6 +139,7 @@
 </section>
 <!-- /.skill-section -->
 
+<hr>
 
 <!-- .blog-section -->
 <section class="blog-section section" id="blog-section">
@@ -142,19 +148,17 @@
         <p>ちょっとしたブログです</p>
     </div>
     <div class="section-body content container">
-        <div class="row">
-            <div class="col-md-8">
-                {% for post in posts %}
-                <div class="post">
-                    <p>{{ post.published_date }}</p>
-                    <h4><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h4>
-                </div>
-                {% endfor %}
-            </div>
+        {% for post in posts %}
+        <div class="post">
+            <p>{{ post.published_date }}</p>
+            <h3><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h3>
         </div>
+        {% endfor %}
     </div>
 </section>
 <!-- /.blog-section -->
+
+<hr>
 
 <!-- .contact-section -->
 <section class="contact-section section" id="contact-section">
@@ -162,7 +166,7 @@
         <h2>CONTACT</h2>
         <p>ご連絡はメールへお願い致します</p>
     </div>
-    <div class="section-body contact-text">yuto.nakagaki@gmail.com</div>
+    <div class="sectioncontact-text">yuto.nakagaki@gmail.com</div>
 </section>
 <!-- /.contact-section -->
 {% endblock %}
