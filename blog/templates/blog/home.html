@@ -18,7 +18,7 @@
         <h2>ABOUT</h2>
         <p>このサイトの紹介</p>
     </div>
-    <div class="about-item">
+    <div class="section-body about-item">
         <img class="about-image" src="{% static 'img/profile-photo2.JPG' %}" alt="プロフィール画像" width="200">
         <div class="about-body">
             <p>
@@ -42,13 +42,12 @@
         <h2>Try</h2>
         <p>取り組んでいること</p>
     </div>
-    <div class="try-item">
+    <div class="section-body try-item">
         <img class="try-image" src="{% static 'img/addrust_img.JPG' %}" alt="長期インターン" width="200">
         <div class="try-body">
             <p>
                 大学1年生の9月から、マーケティング系の会社でのインターンシップに取り組んでいます。<br><br>
-                テレマーケティング事業部にて、初めはプレイヤーから、約一年後には20人程のチームをまとめるリーダーも経験しました。<br>
-                現在はHRM関係にも全力で挑戦中です。<br><br>
+                テレマーケティング事業部にて、初めはプレイヤーから、約一年後には20人程のチームをまとめるリーダーも経験しました。<br><br>
                 営業力やマーケティング思考力を兼ね備えたエンジニアを目指しています！
 
 
@@ -64,7 +63,7 @@
         <h2>SKILL</h2>
         <p>持っているスキル</p>
     </div>
-    <div class="skill-list">
+    <div class="section-body skill-list">
         <div class="skill-item">
             <img class="skill-image" src="{% static 'img/python_logo.png' %}" alt="Pythonロゴ" width="100">
             <div class="skill-body">
@@ -110,7 +109,7 @@
     <div class="section-title">
         <p>勉強中のスキル</p>
     </div>
-    <div class="skill-list">
+    <div class="section-body skill-list">
         <div class="skill-item">
             <img class="skill-image" src="{% static 'img/javascript_logo.jpg' %}" alt="JavaScriptロゴ" width="100">
             <div class="skill-body">
@@ -142,7 +141,7 @@
         <h2>BLOG</h2>
         <p>ちょっとしたブログです</p>
     </div>
-    <div class="content container">
+    <div class="section-body content container">
         <div class="row">
             <div class="col-md-8">
                 {% for post in posts %}
@@ -160,10 +159,10 @@
 <!-- .contact-section -->
 <section class="contact-section section" id="contact-section">
     <div class="section-title">
-        <h2>contact</h2>
-        <p>ご連絡はメールへお願い致します。</p>
+        <h2>CONTACT</h2>
+        <p>ご連絡はメールへお願い致します</p>
     </div>
-    <div class="contact-text">yuto.nakagaki@gmail.com</div>
+    <div class="section-body contact-text">yuto.nakagaki@gmail.com</div>
 </section>
 <!-- /.contact-section -->
 {% endblock %}

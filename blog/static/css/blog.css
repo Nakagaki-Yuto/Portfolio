@@ -20,13 +20,27 @@ a {
     text-decoration: none;
     color: black;
 }
+
 /*sectin*/
-.section-title h2 {
-  
+.section-title > h2 {
+  font-family: "Open sans", sans-serif;
+  font-size: 40px;
+  font-weight: normal;
+  line-height: 1;
+  margin-bottom: 15px;
+  letter-spacing: .05em;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.section-title h2 {
+.section-title > p {
+  margin-bottom: 30px;
+  text-align: center;
+}
 
+.section-lead {
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 /*navbar*/
@@ -122,10 +136,6 @@ a {
 
 /*about-section*/
 /*try-section*/
-.about-section , .try-section {
-  max-width: 1000px;
-}
-
 .about-item, .try-item {
   display: flex;
   align-items: center;
@@ -151,10 +161,6 @@ a {
 }
 
 /*skill-section*/
-.skill-section {
-  max-width: 1000px;
-}
-
 .skill-list {
   display: flex;
   flex-wrap: wrap;
