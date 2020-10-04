@@ -27,9 +27,9 @@ pip install Django~=2.2.4
 # Usage
  
 ```bash
-git clone https://github.com/hoge/~
+git clone https://github.com/Nakagaki-Yuto/Portfolio.git
 cd examples
-python demo.py
+python manage.py runserver
 ```
  
 # Author
