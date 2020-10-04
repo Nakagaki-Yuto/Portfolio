@@ -6,7 +6,7 @@ body {
   font-size: 15px;
   line-height: 1.8;
   letter-spacing: .8px;
-  word-break: normal;
+  word-break: break-all;
   color: #333333;
   padding-top: 60px;
 }
@@ -21,7 +21,14 @@ a {
   color: black;
 }
 
-/*sectin*/
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+
+/*section*/
 .section-title > h2 {
   font-family: "Open sans", sans-serif;
   font-size: 40px;
@@ -29,8 +36,7 @@ a {
   line-height: 1;
   margin-bottom: 15px;
   letter-spacing: .05em;
-  margin-bottom: 15px;
-  margin-top: 100px;
+  padding-top: 100px;
   text-align: center;
 }
 
@@ -39,16 +45,14 @@ a {
   text-align: center;
 }
 
-/*画像が左寄りを修正したい*/
 .section-body {
+  max-width: 1000px;
   text-align: center;
   margin : 0 auto;
-  margin: 50px;
   margin-bottom: 100px;
 }
 
 /*navbar*/
-/*リンク先のずれをなおしたい*/
 .navbar {
   position: fixed;
   top: -10;
@@ -83,11 +87,11 @@ a {
   padding: 20px 0;
   -webkit-transition: .3s;
   transition: .3s;
-  color: #333;
+  color: #333333;
 }
 
 .navbar-link:hover {
-  color: #333;
+  color: #333333;
   text-decoration: none;
 }
 
@@ -101,7 +105,7 @@ a {
   transition: .3s;
   -webkit-transform: translateX(-50%);
   transform: translateX(-50%);
-  background-color: #333;
+  background-color: #333333;
 }
 
 .navbar-link:hover:after {
@@ -150,18 +154,20 @@ a {
 
 .about-image {
   flex: 0 0 220px;
-  margin-right: 40px;
+  margin-right: 60px;
   border-radius: 50%;
   box-shadow: 0 0 25px 0 #d9d9d9;
 } 
 
 .about-body, .try-body {
   flex: 1;
+  margin: 0 auto;
+  text-align: left;
 }
 
 .try-image {
   flex: 0 0 220px;
-  margin-right: 40px;
+  margin-right: 60px;
   box-shadow: 0 0 25px 0 #d9d9d9;
 }
 
@@ -170,7 +176,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  margin-bottom: -50px;
+  margin-bottom: 50px;
 }
 
 .skill-item {
@@ -195,21 +201,30 @@ a {
   margin-bottom: 20px;
 }
 
-.skill-title {
-  margin-bottom: 3px;
+/*blog-section*/
+.blog-content {
+  padding: 50px 0;
+  background-color: #eee;
+  border: 2px solid #333333;
+  margin: 80px auto;
 }
 
-/*blog-section*/
 .post > p {
-  text-align: left;
-  padding-left: 150px;
+  padding-right: 320px;
 }
+
+.post > h3 {
+  margin: 50px auto;
+}
+
 
 
 /*contact-section*/
 .contact-text {
   margin-top: 10px;
   text-align: center;
+  margin: 50px auto;
+  margin-bottom: 90px;
 }
 
 /* footer */
@@ -230,5 +245,5 @@ a {
   cursor: pointer;
   text-align: center;
   color: fff;
-  background-color: #333
+  background-color: #333333
 }

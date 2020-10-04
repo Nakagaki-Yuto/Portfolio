@@ -63,13 +63,13 @@
 
 <!-- .skill-section -->
 <section class="skill-section section" id="skill-section">
-    <div class="section-title">
+    <div class="section-title ">
         <h2>SKILL</h2>
         <p>持っているスキル</p>
     </div>
     <div class="section-body skill-list">
         <div class="skill-item">
-            <img class="skill-image" src="{% static 'img/python_logo.png' %}" alt="Pythonロゴ" width="100">
+            <img class="skill-image" src="{% static 'img/python_logo.png' %}" alt="Pythonロゴ" width="80">
             <div class="skill-body">
                 <h3 class="skill-title">Python</h3>
                 <p>
@@ -79,7 +79,7 @@
             </div>
         </div>
         <div class="skill-item">
-            <img class="skill-image" src="{% static 'img/django_logo.jpg' %}" alt="Djangoロゴ" width="100">
+            <img class="skill-image" src="{% static 'img/django_logo.jpg' %}" alt="Djangoロゴ" width="80">
             <div class="skill-body">
                 <h3 class="skill-title">Django</h3>
                 <p>
@@ -90,7 +90,7 @@
             </div>
         </div>
         <div class="skill-item">
-            <img class="skill-image" src="{% static 'img/html_css_logo.jpg' %}" alt="html/cssロゴ" width="100">
+            <img class="skill-image" src="{% static 'img/html_css_logo.jpg' %}" alt="html/cssロゴ" width="80">
             <div class="skill-body">
                 <h3 class="skill-title">HTML/CSS</h3>
                 <p>
@@ -100,7 +100,7 @@
             </div>
         </div>
         <div class="skill-item">
-            <img class="skill-image" src="{% static 'img/webmarketing_logo.jpg' %}" alt="Webマーケロゴ" width="100">
+            <img class="skill-image" src="{% static 'img/webmarketing_logo.jpg' %}" alt="Webマーケロゴ" width="80">
             <div class="skill-body">
                 <h3 class="skill-title">WEB Markething</h3>
                 <p>
@@ -111,12 +111,11 @@
         </div>
     </div>
     <div class="section-title">
-        <br><br><br>
         <p>勉強中のスキル</p>
     </div>
     <div class="section-body skill-list">
         <div class="skill-item">
-            <img class="skill-image" src="{% static 'img/javascript_logo.jpg' %}" alt="JavaScriptロゴ" width="100">
+            <img class="skill-image" src="{% static 'img/javascript_logo.jpg' %}" alt="JavaScriptロゴ" width="80">
             <div class="skill-body">
                 <h3 class="skill-title">JavaScript</h3>
                 <p>
@@ -126,7 +125,7 @@
             </div>
         </div>
         <div class="skill-item">
-            <img class="skill-image" src="{% static 'img/golang_logo.png' %}" alt="Golangロゴ" width="100">
+            <img class="skill-image" src="{% static 'img/golang_logo.png' %}" alt="Golangロゴ" width="80">
             <div class="skill-body">
                 <h3 class="skill-title">Golang</h3>
                 <p>
@@ -147,12 +146,13 @@
         <h2>BLOG</h2>
         <p>ちょっとしたブログです</p>
     </div>
-    <div class="section-body content container">
+    <div class="section-body blog-content">
         {% for post in posts %}
         <div class="post">
             <p>{{ post.published_date }}</p>
             <h3><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h3>
         </div>
+        
         {% endfor %}
     </div>
 </section>
@@ -166,7 +166,7 @@
         <h2>CONTACT</h2>
         <p>ご連絡はメールへお願い致します</p>
     </div>
-    <div class="sectioncontact-text">yuto.nakagaki@gmail.com</div>
+    <div class="contact-text">yuto.nakagaki@gmail.com</div>
 </section>
 <!-- /.contact-section -->
 {% endblock %}
