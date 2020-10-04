@@ -1,9 +1,16 @@
 {% extends 'blog/base.html' %}
+{% load static %}
 
 {% block content %}
-<h2>コメントを投稿</h2>
-<form method="POST" class="post-form">{% csrf_token %}
-    {{ form.as_p }}
-    <button type="submit" class="save btn btn-default">投稿</button>
-</form>
+
+<!-- .add-comment -->
+<div class="add-comment">
+    <h2>コメントの投稿</h2>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">投稿</button>
+    </form>
+</div>
+<!-- /.add-comment -->
+
 {% endblock %}
