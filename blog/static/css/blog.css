@@ -195,6 +195,12 @@ img {
 
 .skill-body {
   flex: 1;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.skill-body > h3 {
+  padding-left: 15px;
 }
 
 .skill-body p:not(:last-child) {
