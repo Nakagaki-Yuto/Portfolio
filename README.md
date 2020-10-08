@@ -28,7 +28,7 @@ pip install Django~=2.2.4
  
 ```bash
 git clone https://github.com/Nakagaki-Yuto/Portfolio.git
-cd examples
+cd Portfolio
 python manage.py runserver
 ```
  
