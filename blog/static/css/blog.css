@@ -145,7 +145,8 @@ img {
 
 /*about-section*/
 /*try-section*/
-.about-item, .try-item {
+/*work-section*/
+.about-item, .try-item, .work-item {
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -159,13 +160,13 @@ img {
   box-shadow: 0 0 25px 0 #d9d9d9;
 } 
 
-.about-body, .try-body {
+.about-body, .try-body, .work-body {
   flex: 1;
   margin: 0 auto;
   text-align: left;
 }
 
-.try-image {
+.try-image, .work-image {
   flex: 0 0 220px;
   margin-right: 60px;
   box-shadow: 0 0 25px 0 #d9d9d9;

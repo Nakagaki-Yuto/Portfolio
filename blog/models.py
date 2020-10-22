@@ -9,6 +9,7 @@ class Post(models.Model):
     text = models.TextField()
     created_date = models.DateTimeField(default=timezone.now)
     published_date = models.DateTimeField(blank=True, null=True)
+    # like = models.ManyToManyField(User, related_name='like', blank=True)
 
     def publish(self):
         self.published_date = timezone.now()
@@ -26,6 +27,3 @@ class Comment(models.Model):
 
     def __str__(self):
         return self.text
-
-class Like(models.Model):
-    post = models.ForeignKey('blog.Post', on_delete=models.CASCADE, related_name='likes')
