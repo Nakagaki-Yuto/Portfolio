@@ -1,7 +1,7 @@
 # Nakagaki Yuto Portfolio
 
-エンジニア志望の現在大学3年生、中垣祐人です。<br>
-ポートフォリオになるようなサイトを作りました。
+同志社大学の3年生、中垣祐人と申します。<br>
+自身のポートフォリオになるようなサイトを作りました。
  
  
 # Features
@@ -28,7 +28,7 @@ pip install Django~=2.2.4
  
 ```bash
 git clone https://github.com/Nakagaki-Yuto/Portfolio.git
-cd examples
+cd Portfolio
 python manage.py runserver
 ```
  
