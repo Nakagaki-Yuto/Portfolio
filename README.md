@@ -1,7 +1,7 @@
 # Nakagaki Yuto Portfolio
 
 自身のポートフォリオになるようなサイトを作りました。<br><br>
- 「[Nakagaki Yuto Portfolio](https://nakagakiyuto.pythonanywhere.com/)」<br>
+【URL】[Nakagaki Yuto Portfolio](https://nakagakiyuto.pythonanywhere.com/)」<br>
  
 # Features
 
