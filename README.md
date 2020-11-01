@@ -1,6 +1,5 @@
 # Nakagaki Yuto Portfolio
 
-同志社大学の3年生、中垣祐人と申します。<br>
 自身のポートフォリオになるようなサイトを作りました。<br><br>
  「[Nakagaki Yuto Portfolio](https://nakagakiyuto.pythonanywhere.com/)」<br>
  
