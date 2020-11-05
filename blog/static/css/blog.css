@@ -200,9 +200,9 @@ img {
   text-align: left;
 }
 
-.skill-body > h3 {
+/* .skill-body > h3 {
   padding-left: 15px;
-}
+} */
 
 .skill-body p:not(:last-child) {
   margin-bottom: 20px;
