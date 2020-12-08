@@ -1,6 +1,6 @@
 # Nakagaki Yuto Portfolio
 
-自身のポートフォリオになるようなサイトを作りました。<br><br>
+自身のポートフォリオになるようなサイトを作りました！<br><br>
 【URL】[Nakagaki Yuto Portfolio](https://nakagakiyuto.herokuapp.com/)<br>
  
 # Features
